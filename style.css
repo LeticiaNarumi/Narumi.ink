@@ -32,6 +32,8 @@ body{
   background-position: top center;
   background-size: cover; */
   background: var(--bg-url) no-repeat top center/cover;
+
+  height: 100vh;
 }
 
 body * {
@@ -40,16 +42,8 @@ body * {
 }
 
 #container {
-  width: 360px;
-  /* height: 712px; */
-  /* border: 1px solid red; */
-  /* margin-right: auto;
-  margin-left: auto; */
-  
-  /* margin-top: 56px;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto; */
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 
@@ -194,5 +188,15 @@ footer{
   font-size: 14px;
 }
 
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+
+  }
+}
 
